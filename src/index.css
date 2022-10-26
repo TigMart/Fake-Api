@@ -1,0 +1,31 @@
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #fff;
+  font-weight: 700;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+.post-parent {
+  height: 40vh;
+  overflow: auto;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+.accordion-button {
+  font-weight: 600;
+}
+
+.w-15 {
+  width: 15%;
+}
+
+.form-control:focus {
+  border-color: #212529;
+  box-shadow: 0 0.1rem 0.1rem 0.2rem rgba(0, 0, 0, 0.25);
+}
