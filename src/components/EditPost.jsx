@@ -37,7 +37,7 @@ const EditPost = ({ type, id, placeholder }) => {
       let edited = posts.map((elem) => {
         return elem.id === id
           ? {
-              id: Math.round(new Date().getTime() % 1000),
+              id: id,
               title: value1.editTitle,
               body: value2.editBody,
             }

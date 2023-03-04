@@ -34,7 +34,7 @@ const SinglePost = () => {
       {post && (
         <>
           <Container className="mt-4">
-            <Col className="mb-4" key={post.id}>
+            <Col className="mb-4" >
               <Card style={{ width: "40rem", height: "10rem" }}>
                 <Card.Body>
                   <Card.Title>{`${post[0].title

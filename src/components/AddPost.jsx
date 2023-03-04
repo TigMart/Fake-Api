@@ -48,6 +48,7 @@ const AddPost = () => {
           <Form.Control
             aria-label="Title"
             aria-describedby="basic-addon1"
+            value={title}
             onChange={(e) => setTitle(e.target.value)}
             required
           />
@@ -59,6 +60,7 @@ const AddPost = () => {
           <Form.Control
             aria-label="Body"
             aria-describedby="basic-addon2"
+            value={body}
             onChange={(e) => setBody(e.target.value)}
             required
           />
