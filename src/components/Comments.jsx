@@ -12,7 +12,6 @@ const Comments = () => {
   const getSinglePostComments = async () => {
     try {
       const response = await getPostComments(params.id);
-      console.log(...response.data);
       if (response.data) {
         window.localStorage.setItem("comments", JSON.stringify(response.data));
         dispatch({
@@ -29,7 +28,6 @@ const Comments = () => {
   useEffect(() => {
     getSinglePostComments();
   }, []);
-  console.log(comments);
   return comments && comments.length ? (
     <Container className="mt-4 mb-4">
       <h2>Comments</h2>

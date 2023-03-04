@@ -10,12 +10,13 @@ const EditPost = ({ type, id, placeholder }) => {
   const posts = useSelector((state) => state.posts);
   const dispatch = useDispatch();
   
+  const { PhTitle, PhBody } = placeholder;
 
   const [value1, setValue1] = useState({
-    editTitle: "",
+    editTitle: PhTitle,
   });
   const [value2, setValue2] = useState({
-    editBody: "",
+    editBody: PhBody,
   });
 
   const onChange1 = (e) => {
@@ -57,12 +58,9 @@ const EditPost = ({ type, id, placeholder }) => {
       console.log(err);
     }
 
-    setValue1({  editTitle: "" });
-    setValue2({  editBody: "" });
   };
 
-  const { PhTitle, PhBody } = placeholder;
-  console.log(PhBody);
+
   return (
     <Form autoComplete="off" className="mt-3" onSubmit={(e) => onEditSubmit(e, id)}>
       <Row>
