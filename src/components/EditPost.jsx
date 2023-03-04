@@ -9,16 +9,12 @@ import { PutPost } from "../actions/addPost";
 const EditPost = ({ type, id, placeholder }) => {
   const posts = useSelector((state) => state.posts);
   const dispatch = useDispatch();
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  
 
   const [value1, setValue1] = useState({
-    title: "",
     editTitle: "",
   });
   const [value2, setValue2] = useState({
-    body: "",
     editBody: "",
   });
 
@@ -61,8 +57,8 @@ const EditPost = ({ type, id, placeholder }) => {
       console.log(err);
     }
 
-    setValue1({ title: "", editTitle: "" });
-    setValue2({ body: "", editBody: "" });
+    setValue1({  editTitle: "" });
+    setValue2({  editBody: "" });
   };
 
   const { PhTitle, PhBody } = placeholder;

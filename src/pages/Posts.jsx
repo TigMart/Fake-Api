@@ -2,6 +2,7 @@ import React from "react";
 import { Container, ListGroup, Row } from "react-bootstrap";
 import AddPost from "../components/AddPost";
 import PostsTable from "../components/PostsTable";
+
 const Posts = () => {
   return (
     <Container className="mt-4 mb-4">

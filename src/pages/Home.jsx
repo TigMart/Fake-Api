@@ -1,6 +1,7 @@
 import React from "react";
 import { Badge, Container, Row } from "react-bootstrap";
 import PostCards from "../components/PostCards";
+
 const Home = () => {
   return (
     <>
